@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        'use strict'
+        const post=[
+            {
+                id:3,
+                price:200,
+            },
+            {
+                id:4,
+                price:333,
+            },
+            {
+                id:5,
+                price:1000,
+            }
+        ];
+        let discount=15
+    
+        post.forEach(function(num){
+          let dist=parseInt(num.price/100*discount)
+         let show=(parseInt(num.price-dist))
+          console.log(show)
+
+           
+        })
+   
+    </script>
+</body>
+</html>

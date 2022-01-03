@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        'use strict'
+        const product=[
+            {
+                id:3,
+                price:123,
+                photo:[
+                    "1.jpg",
+                    "2.jpg"
+                ]
+            },
+            {
+                id:5,
+                price:499,
+                photo:[
+
+                ]
+            },
+            {
+                id:10,
+                price:23,
+                photo:[
+                    "3.jpg",
+                ]
+
+            },
+            {
+                id:8,
+                price:78
+            }
+
+        ]
+
+       const porducthphot=product.filter(items=>"photo" in items&& items.photo.length>0 )
+       console.log(porducthphot)
+       const sortedeProduc=product.sort(function(item1,item2){
+           return item1.price-item2.price
+       })
+       console.log(sortedeProduc)
+    </script>
+</body>
+</html>

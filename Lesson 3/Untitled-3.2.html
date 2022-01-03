@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        'use sctrict'
+        const post = {
+            author: "John",
+            id: 23,
+            comments: [
+                {
+                    userId: 10,
+                    userName: "Alex",
+                    text: "lorean ipsun",
+                    raitng: {
+                        likes: 10,
+                        dislike: 20
+                    }
+                },
+                {
+                    userId: 5,
+                    userName: "Jhane",
+                    text: "lorean ipsun 2",
+                    raiting: {
+                        likes: 12,
+                        dislikes: 123
+
+                    }
+                },
+            ]
+        };
+        
+        console.log(post.author)
+        console.log(post.comments[0].raitng.dislike)
+        console.log(post.comments[1].userId)
+        console.log(post.comments[1].text)
+        
+        for (let sy in post.comments[1]) {
+
+            console.log(post.comments[1][sy])
+            if (sy === 'text') {
+                console.log(post.comments[1][sy])
+            }
+        }
+
+        for (num of post.comments) {
+            if (num.userId < 10) {
+                console.log(num.userId)
+            }
+
+        }
+    </script>
+</body>
+
+</html>
